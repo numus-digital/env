@@ -1,0 +1,34 @@
+[default]
+region = eu-west-1
+
+[profile numeus-prd]
+sso_start_url = https://numeus.awsapps.com/start
+sso_region = eu-west-1
+region = eu-west-1
+output = json
+sso_account_id = 472459934538 
+
+
+[profile numeus-dev]
+sso_start_url = https://numeus.awsapps.com/start
+sso_region = eu-west-1
+region = eu-west-1
+output = json
+sso_account_id = 124515774948
+
+
+[profile numeus-res]
+sso_start_url = https://numeus.awsapps.com/start
+sso_region = eu-west-1
+region = eu-west-1
+output = json
+sso_account_id = 709485685715 
+
+
+[profile numeus-wks]
+sso_start_url = https://numeus.awsapps.com/start
+sso_region = eu-west-1
+region = eu-west-1
+output = json
+sso_account_id = 008451517057
+

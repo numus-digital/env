@@ -5,14 +5,11 @@ mkdir ~/.aws
 cat awsconfig > ~/.aws/config
 /usr/local/bin/aws configure sso --profile numeus-wks
 
-echo "adding user to docker group..."
-sudo usermod -aG docker $USER
-newgrp docker
-
 echo "generating ssh keys..."
 ssh-keygen
 echo "paste the following into you github settings->ssh and gpg keys->new ssh key:"
 cat ~/.ssh/id_rsa.pub
+read -p 'Press enter to continue...'
 
 echo "cloning nte..."
 cd
@@ -23,6 +20,7 @@ dconf write "/org/mate/desktop/interface/monospace-font-name" "'SauceCodePro Ner
 
 rm -rf ~/env
 
-echo "starting container..."
-cd nte; ./dev.py
+echo "adding user to docker group..."
+sudo usermod -aG docker $USER
+newgrp docker
 

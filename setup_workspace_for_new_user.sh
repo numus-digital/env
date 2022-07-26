@@ -3,7 +3,7 @@
 echo "seting up aws sso.  login in browser when prompted..."
 mkdir ~/.aws
 cat awsconfig > ~/.aws/config
-/usr/local/bin/aws configure sso --profile numus-wks
+/usr/local/bin/aws configure sso --profile numeus-wks
 
 echo "adding user to docker group..."
 sudo usermod -aG docker $USER

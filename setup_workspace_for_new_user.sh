@@ -6,9 +6,10 @@ cat awsconfig > ~/.aws/config
 /usr/local/bin/aws configure sso --profile numeus-wks
 
 echo "generating ssh keys..."
-ssh-keygen
-echo "paste the following into you github settings->ssh and gpg keys->new ssh key:"
+ssh-keygen -f $HOME/.ssh/id_rsa -P '' -q
+echo -e "\e[32mpaste the following into you github settings->ssh and gpg keys->new ssh key:\e[0m"
 cat ~/.ssh/id_rsa.pub
+echo
 read -p 'Press enter to continue...'
 
 echo "cloning nte..."

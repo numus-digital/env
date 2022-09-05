@@ -13,7 +13,8 @@ echo
 read -p 'Press enter to continue...'
 
 echo "cloning nte..."
-cd
+mkdir -p ~/src
+cd ~/src
 git clone git@github.com:numus-digital/nte.git
 
 echo "setting fancy fonts..."
@@ -24,4 +25,3 @@ rm -rf ~/env
 echo "adding user to docker group..."
 sudo usermod -aG docker $USER
 newgrp docker
-

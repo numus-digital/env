@@ -1,5 +1,13 @@
 [default]
+role_arn = arn:aws:iam:008451517057:role/numeus-workspace-development-role
+role_session_name = wks-dev-role
+source_profile = wks-dev-user
 region = eu-west-1
+output = json
+
+[profile wks-dev-user]
+aws_access_key_id = AKIAXXXXXXXXXXXXXXXX
+aws_secret_access_key = XXXXXXXXXXXXXXXXXXXXXXXX
 
 [profile numeus-prd]
 sso_start_url = https://numeus.awsapps.com/start

@@ -1,0 +1,34 @@
+[alias]
+  s = status
+  g = grep
+  f = fetch --prune --tags
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[status]
+  short = true
+[color.diff]
+  meta = "white blue"
+[format]
+  pretty = format:"%C(red)%h%C(reset) %cd%C(auto)%d%C(reset) %C(blue)%an%C(reset) %s"
+[merge]
+  keepBackup = false
+  conflictstyle = diff3
+[log]
+  date = relative
+[gc]
+  auto = 0
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[push]
+	default = current
+[pull]
+	rebase = true
+[blame]
+  ignoreRevsFile = .git-blame-ignore-revs
+[user]
+

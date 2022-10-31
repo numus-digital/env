@@ -5,10 +5,6 @@ source_profile = wks-dev-user
 region = eu-west-1
 output = json
 
-[profile wks-dev-user]
-aws_access_key_id = AKIAXXXXXXXXXXXXXXXX
-aws_secret_access_key = XXXXXXXXXXXXXXXXXXXXXXXX
-
 [profile numeus-prd]
 sso_start_url = https://numeus.awsapps.com/start
 sso_region = eu-west-1
@@ -40,3 +36,6 @@ region = eu-west-1
 output = json
 sso_account_id = 008451517057
 
+[profile wks-dev-user]
+aws_access_key_id = XXX
+aws_secret_access_key = YYY

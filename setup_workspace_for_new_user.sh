@@ -12,7 +12,7 @@ echo "email = $NAME@numeus.xyz" >> ~/.gitconfig
 
 echo "generating ssh keys..."
 ssh-keygen -f $HOME/.ssh/id_rsa -P '' -q
-ssh-copy-id
+ssh-copy-id localhost
 echo -e "\e[32mpaste the following into you github settings->ssh and gpg keys->new ssh key:\e[0m"
 cat ~/.ssh/id_rsa.pub
 echo

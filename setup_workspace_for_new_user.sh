@@ -13,10 +13,12 @@ echo "email = $NAME@numeus.xyz" >> ~/.gitconfig
 echo "generating ssh keys..."
 ssh-keygen -f $HOME/.ssh/id_rsa -P '' -q
 ssh-copy-id localhost
+trap "echo 'Right click copy to copy....'" 2
 echo -e "\e[32mpaste the following into you github settings->ssh and gpg keys->new ssh key:\e[0m"
 cat ~/.ssh/id_rsa.pub
 echo
 read -p 'Press enter to continue...'
+trap 2
 
 echo "cloning nte..."
 mkdir -p ~/src

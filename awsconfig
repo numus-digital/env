@@ -1,5 +1,5 @@
 [default]
-role_arn = arn:aws:iam:008451517057:role/numeus-workspace-development-role
+role_arn = arn:aws:iam::008451517057:role/numeus-workspace-development-role
 role_session_name = wks-dev-role
 source_profile = wks-dev-user
 region = eu-west-1

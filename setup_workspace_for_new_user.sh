@@ -6,9 +6,9 @@ cat awsconfig > ~/.aws/config
 #/usr/local/bin/aws configure sso --profile numeus-wks
 
 cat gitconfig > ~/.gitconfig
-NAME=`whoami | sed "s/\..*//"` 
-echo "name = dominic"  >> ~/.gitconfig
-echo "email = dominic@numeus.xyz" >> ~/.gitconfig
+NAME=`whoami | sed "s/\..*//" | sed "s/wks.//"` 
+echo "name = $NAME"  >> ~/.gitconfig
+echo "email = $NAME@numeus.xyz" >> ~/.gitconfig
 
 echo "generating ssh keys..."
 ssh-keygen -f $HOME/.ssh/id_rsa -P '' -q

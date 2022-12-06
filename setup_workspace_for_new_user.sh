@@ -26,11 +26,7 @@ cd ~/src
 git clone git@github.com:numus-digital/nte.git
 
 echo "setting docker dns..."
-sudo cat <<EOT >> /etc/docker/daemon.json
-{
-    "dns": ["10.250.9.168", "8.8.8.8"]
-}
-EOT
+echo ' { "dns": ["10.250.9.168", "8.8.8.8"] } ' | sudo tee -a /etc/docker/daemon.json
 
 echo "setting fancy fonts..."
 dconf write "/org/mate/desktop/interface/monospace-font-name" "'SauceCodePro Nerd Font Mono 10'"
